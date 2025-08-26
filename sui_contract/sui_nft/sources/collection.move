@@ -173,4 +173,14 @@ module sui_nft::collection {
     public fun increase_minted(c: &mut Collection) {
         c.total_minted = c.total_minted + 1;
     }
+
+    /// 读取 AdminCap 绑定的 Collection ID
+    public fun get_cap_collection_id(cap: &AdminCap): ID {
+        cap.collection
+    }
+
+    /// 读取 Collection 的创建者地址
+    public fun get_creator(c: &Collection): address {
+        c.creator
+    }
 }
