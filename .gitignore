@@ -30,3 +30,8 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+sui_contract/sui_nft/build/*
+sui_contract/sui_nft/.trace
+sui_contract/sui_nft/.coverage*
+.idea
